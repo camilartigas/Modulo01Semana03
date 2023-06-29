@@ -1,0 +1,38 @@
+body{
+    font-family: "Gill Sans", sans-serif;
+    background-color: rgba(240, 255, 255, 0.256);
+}
+
+.row{
+    display: flex; /* coloca lado a lado */
+    align-items: center; /*centro cima baixo*/
+    justify-content: center; /*centro esquerda direita*/
+}
+
+.card{
+    border-radius: 2px; /*arredonda bordas*/
+    box-shadow: 4px 3px 10px -2px rgba(69, 71, 90, 0.13);/*https://cssgenerator.pl/en/box-shadow-generator/*/
+    padding: 5px;/* espaço ao redor do conteúdo*/
+    margin: 5px;/* espaço ao redor do elemento*/
+    width: 280px;/* largura de um elemento*/
+    transition: all 0.3s ease-out;/* efeito a ser colocado - efeito de transição com final lento */
+}
+
+.card:hover{
+    transform: translate(-2px); /* sobe o card */
+    cursor: pointer; /* mouse vira maozinha*/
+}
+
+
+.card p{ /* estiliza o paragrafo */
+    color: rgb(2, 32, 56); /*cor do parágrafo*/
+    font-size: 16px; /*tamanho fonte parágrafo*/
+}
+
+.card del{
+    color: rgb(186, 44, 44);
+}
+
+.card h3{
+    color: rgb(20, 32, 140);
+}
