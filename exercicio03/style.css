@@ -36,3 +36,10 @@ body{
 .card h3{
     color: rgb(20, 32, 140);
 }
+
+.imagem{ /* centraliza img e muda tamanho */
+    margin: auto;
+    display: block;
+    max-width: 200px;
+    max-height: 200px;
+}

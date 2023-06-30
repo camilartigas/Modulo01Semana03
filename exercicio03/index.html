@@ -41,7 +41,7 @@
     <div class="card xarope">
   <!--IMAGEM-->
   
-  <img src="vick44e.png" alt="xarope vick" width="300" height="300">
+  <img class="imagem" src="vick44e.png" alt="xarope vick" width="300" height="300">
   
   <!--TÍTULO-->
     <h3>VICK 44E XAROPE 120ML</h3>
@@ -54,21 +54,21 @@
     </p>
 
   <!--ÏCONE DE CORAÇÃO-->
-    <button>
-      coração
-    </button>
+    
+      <!-- Uso básico
+Para usar um ícone integrado do pacote Ionicons, preencha o nameatributo no ion-iconcomponente: -->
+      <ion-icon name="heart-outline"></ion-icon>
+    
 
   <!--BOTÃO ADICIONAR-->
-  <button>
-    carrinho
-  </button>
+  <ion-icon name="cart-outline"></ion-icon>
 
     </div>
 
     <div class="card gripe">
       <!--IMAGEM-->
       
-      <img src="cimegripe.png" alt="cimegripe" width="200" height="200">
+      <img class="imagem" src="cimegripe.png" alt="cimegripe" width="200" height="200">
       
       <!--TÍTULO-->
         <h3>CIMEGRIPE C/20 CPR</h3>
@@ -81,21 +81,17 @@
         </p>
     
       <!--ÏCONE DE CORAÇÃO-->
-        <button>
-          coração
-        </button>
+      <ion-icon name="heart-outline"></ion-icon>
     
       <!--BOTÃO ADICIONAR-->
-      <button>
-        carrinho
-      </button>
+      <ion-icon name="cart-outline"></ion-icon>
     
         </div>
 
         <div class="card azia">
           <!--IMAGEM-->
           
-          <img src="gastrobion.png" alt="gatrobion" width="300" height="300">
+          <img class="imagem" src="gastrobion.png" alt="gatrobion" width="300" height="300">
           
           <!--TÍTULO-->
             <h3>GASTROBION 240ML</h3>
@@ -108,21 +104,17 @@
             </p>
         
           <!--ÏCONE DE CORAÇÃO-->
-            <button>
-              coração
-            </button>
+          <ion-icon name="heart-outline"></ion-icon>
         
           <!--BOTÃO ADICIONAR-->
-          <button>
-            carrinho
-          </button>
+          <ion-icon name="cart-outline"></ion-icon>
         
             </div>
 
             <div class="card enxaqueca">
               <!--IMAGEM-->
               
-              <img src="doralgina.png" alt="xarope vick" width="200" height="200">
+              <img class="imagem" src="doralgina.png" alt="xarope vick" width="200" height="200">
               
               <!--TÍTULO-->
                 <h3>DORALGINA C/20 CPR</h3>
@@ -135,14 +127,10 @@
                 </p>
             
               <!--ÏCONE DE CORAÇÃO-->
-                <button>
-                  coração
-                </button>
+              <ion-icon name="heart-outline"></ion-icon>
             
               <!--BOTÃO ADICIONAR-->
-              <button>
-                carrinho
-              </button>
+              <ion-icon name="cart-outline"></ion-icon>
             
                 </div>
     
@@ -157,6 +145,14 @@
 
 
   <!--FIM RELAÇÃO DE PRODUTOS--> 
-    
+ 
+  
+
+
+  <!-- Instalação ion-icon
+Se você estiver usando o Ionic Framework, o Ionicons é empacotado por padrão, portanto, nenhuma instalação é necessária. Quer usar Ionicons sem Ionic Framework? Coloque o seguinte script próximo ao final da sua página, logo antes da body tag de fechamento, para ativá-los. -->
+  
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
