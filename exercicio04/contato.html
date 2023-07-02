@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FALE CONOSCO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- IMAGEM -->
+    <div class="container"><!-- dividir a pagina em imagem e formulário -->
+        <div class="form-image"><!-- parte da imagem -->
+            <img src="img/undraw_appreciation_275g.svg" alt="">
+        </div>
+
+        <!-- FORMULÁRIO -->
+        <div class="form"></div><!-- parte do formulário -->
+        <form action="#"> <!-- # formulário sem ação até ter back -->
+            <div class="form-header"><!-- header do formulário -->
+                <div class="title">
+                    <h1>FORMULÁRIO DE CONTATO</h1>
+                </div>
+                
+            </div>
+            <div class="input-group"><!-- cria a área do formulário -->
+                <div class="input-box"><!-- cria as linhas do formulário -->
+                    <label for="name">Nome</label>
+                    <input id="name" type="text" name="name" placeholder="Informe seu nome" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="tel">Telefone para contato</label>
+                    <input id="tel" type="tel" name="tel" placeholder="Informe seu telefone" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="email">E-mail</label>
+                    <input id="email" type="email" name="email" placeholder="Informe seu e-mail" required>
+                </div>
+
+               <div>
+                <label>Assunto</label>
+                <select id="assunto">
+                    <option selected disabled value=""></option>
+                    <option value="">Comercial</option>
+                    <option value="">Dúvidas</option>
+                    <option value="">Revenda</option>
+                </select>
+               </div>
+
+               <div>
+                <label>Mensagem</label>
+                <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+               </div>
+
+               
+                <div>
+                    <input type="checkbox" id="orcamento" name="orcamento" value="Esta mensagem é sobre um orçamento">
+                    <label for="orcamento">Esta mensagem é sobre um orçamento</label>
+                </div>
+              
+                <button>Enviar</button>
+
+                
+            </div>
+
+            
+        </form>
+    </div>
+
+    
+</body>
+</html>
+
+<!-- imagem copiada do site https://undraw.co/illustrations -->
+<!-- 
+    COMANDOS UTILIZADOS!
+
+1. div - O elemento de divisão ** HTML <div> ** é um contêiner genérico para conteúdo de fluxo, que de certa forma não representa nada. Ele pode ser usado para agrupar elementos para fins de estilos (usando classe ou id ), ou porque eles inspiraram valores de atributos, como lang .
+
+2.img - O elemento **HTML <img>**(ou HTML Image Element ) representa a inserção de imagem no documento, sendo implementado também pelo HTML5 para uma melhor experiência com o elemento <figure>e <figcaption>.
+
+3.form - O **elemento HTML <form>**representa uma seção de um documento que contém controles interativos que permitem ao usuário enviar informações a um determinado servidor web.
+
+É possível utilizar as pseudo-classes de CSS :valide :invalidaplicar estilo a um elemento <form>.
+
+4.h1 - Os elementos HTML <h1>–<h6> representam seis níveis de título de seção. <h1> é o nível de seção mais alto e <h6> é o mais baixo.
+
+5.label - Um elemento **HTML <label>**representa uma legenda para um item em uma interface de usuário. Ele pode estar associado a um elemento de controle, colocando-o dentro do elemento labelou usando o atributo for. Tal controle é chamado de controle etiquetado do elemento etiqueta. Uma entrada pode ser associada a diversas etiquetas (<label>s).
+
+6.input - O elemento HTML <input> é usado para criar controles interativos para formulários baseados na web para receber dados do usuário. A semântica de um <input> varia consideravelmente dependendo do valor de seu atributo type.
+
+7.select - O elemento HTML select (<select>) representa um controle que apresenta um menu de opções. As opções dentro do menu são representadas pelo elemento <option>, que podem ser agrupados por elementos <optgroup>. As opções podem ser pré-selecionadas para o usuário.
+
+8. option - Em um formulário Web, o elemento HTML <option> é usado para criar um controle que representa um item dentro de um elemento HTML5 <select>, <optgroup> ou <datalist>.
+
+9.textarea - O elemento HTML <textarea>representa um controle de edição para uma caixa de texto, útil quando você quer permitir ao usuário informar um texto extenso em formato livre, como um comentário ou formulário de retorno.
+
+10.button - O Elemento HTML <button> representa um botão clicável.
+ -->
