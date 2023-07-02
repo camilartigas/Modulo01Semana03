@@ -1,76 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FALE CONOSCO</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylecont.css">
 </head>
+
 <body>
     <!-- IMAGEM -->
     <div class="container"><!-- dividir a pagina em imagem e formulário -->
         <div class="form-image"><!-- parte da imagem -->
-            <img src="img/undraw_appreciation_275g.svg" alt="">
+            <img src="img/undraw_team_up_re_84ok.svg" alt="">
         </div>
 
         <!-- FORMULÁRIO -->
-        <div class="form"></div><!-- parte do formulário -->
-        <form action="#"> <!-- # formulário sem ação até ter back -->
-            <div class="form-header"><!-- header do formulário -->
+        <div class="form"><!-- parte do formulário -->
+            <form action="#"> <!-- # formulário sem ação até ter back -->
                 <div class="title">
-                    <h1>FORMULÁRIO DE CONTATO</h1>
+                    <h1>Formulário de Contato</h1>
                 </div>
-                
-            </div>
-            <div class="input-group"><!-- cria a área do formulário -->
-                <div class="input-box"><!-- cria as linhas do formulário -->
-                    <label for="name">Nome</label>
-                    <input id="name" type="text" name="name" placeholder="Informe seu nome" required>
+                <div class="input-group"><!-- cria a área do formulário -->
+                    <div class="input-box"><!-- cria as linhas do formulário -->
+                        <label for="name">Nome</label>
+                        <input id="name" type="text" name="name" placeholder="Informe seu nome" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="tel">Telefone para contato</label>
+                        <input id="tel" type="tel" name="tel" placeholder="Informe seu telefone" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="Informe seu e-mail" required>
+                    </div>
+
+                    <div>
+                        <label>Assunto</label>
+                        <select id="assunto">
+                            <option selected disabled value="">Selecione</option>
+                            <option value="">Comercial</option>
+                            <option value="">Dúvidas</option>
+                            <option value="">Revenda</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label>Mensagem</label>
+                        <textarea name="mensagem" id="mensagem" cols="50" rows="8"></textarea>
+                    </div>
+
+
+                    <div>
+                        <input type="checkbox" id="orcamento" name="orcamento"
+                            value="Esta mensagem é sobre um orçamento">
+                        <label for="orcamento">Esta mensagem é sobre um orçamento</label>
+                    </div>
+
+                    <button class="button"><a href="#"></a>Enviar</button>
+
+
                 </div>
 
-                <div class="input-box">
-                    <label for="tel">Telefone para contato</label>
-                    <input id="tel" type="tel" name="tel" placeholder="Informe seu telefone" required>
-                </div>
 
-                <div class="input-box">
-                    <label for="email">E-mail</label>
-                    <input id="email" type="email" name="email" placeholder="Informe seu e-mail" required>
-                </div>
-
-               <div>
-                <label>Assunto</label>
-                <select id="assunto">
-                    <option selected disabled value=""></option>
-                    <option value="">Comercial</option>
-                    <option value="">Dúvidas</option>
-                    <option value="">Revenda</option>
-                </select>
-               </div>
-
-               <div>
-                <label>Mensagem</label>
-                <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
-               </div>
-
-               
-                <div>
-                    <input type="checkbox" id="orcamento" name="orcamento" value="Esta mensagem é sobre um orçamento">
-                    <label for="orcamento">Esta mensagem é sobre um orçamento</label>
-                </div>
-              
-                <button>Enviar</button>
-
-                
-            </div>
-
-            
-        </form>
+            </form>
+        </div>
     </div>
 
-    
+
 </body>
+
 </html>
+
 
 <!-- imagem copiada do site https://undraw.co/illustrations -->
 <!-- 
