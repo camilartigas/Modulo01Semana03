@@ -1,26 +1,80 @@
 /* CSS INDEX */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 *{
+    /* background-color: rgb(246, 246, 237); */
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 }
+
 body{
-    font-family: "Gill Sans", sans-serif;
-    background-color: rgba(240, 255, 255, 0.256);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+   
 }
+
+.header{
+    position: absolute;
+    top: 1px;
+    background-color: rgb(240,235,223);
+    width: 100%;
+    height: 12%;
+    display: flex;
+}
+
+.header img{
+    width: 70px;
+    height: 70px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    margin: 40px; */
+}
+/* .search-header{
+    position: absolute;
+    top: 0px;
+    background-color: rgb(240, 235, 223);
+    width: 100%;
+    height: 13%;
+    display: flex;
+    align-items: center;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .row{
     display: flex; /* coloca lado a lado */
     align-items: center; /*centro cima baixo*/
     justify-content: center; /*centro esquerda direita*/
-}
-
-.header{
-    width: 90%;
-    height: 20vh;
-    font-family: 'Roboto', sans-serif;
-
 }
 
 .card{
