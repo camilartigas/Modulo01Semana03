@@ -1,113 +1,192 @@
-/* CSS INDEX */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-*{
-    /* background-color: rgb(246, 246, 237); */
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    
-}
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&display=swap');
 
 body{
-    width: 100%;
-    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background-color: rgb(255, 245, 221);
+    padding: 6px;
     display: flex;
     align-items: center;
+  }
+  main {
+    padding: 20px;
+  }
+  
+  .input-container img {
+    margin-left: 20px;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .input-container {
+    display: flex;
+    align-items: center;
+    flex: 0.9; 
+  }
+  
+  input {
+    flex: 1; 
+    border: none;
+    border-radius: 10px;
+    margin: 0.8rem 10px;
+    font-family: 'Satisfy', cursive;
+    font-size: 1rem;
+    padding: 5px;
+    padding-left: 20px;
+  }
    
+  button{
+    border: none;
+    background-color: hsl(350, 60%, 72%);
+    padding: 0.3rem 0.8rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
 }
 
-.header{
-    position: absolute;
-    top: 1px;
-    background-color: rgb(240,235,223);
-    width: 100%;
-    height: 12%;
+button:hover{
+    background-color: hsl(350, 83%, 67%);
+}
+  
+  .menu ul {
+    list-style: none;
+  }
+  
+  .menu li {
+    display: inline-block;
+    margin-right: 15px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: hsl(350, 83%, 67%);
+  }
+
+  .menu a:hover{
+    border-bottom: 2px solid hsl(350, 77%, 65%);
+  }
+
+  .menu a:active{
+    color: hsl(350, 83%, 48%);
+  }
+
+  .menu a:visited{
+    color: hsl(350, 57%, 75%);
+  }
+  
+  /* Estilos para os cartões de produtos */
+  .row {
     display: flex;
-}
-
-.header img{
-    width: 70px;
-    height: 70px;
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 70px;
-    height: 70px;
-    margin: 40px; */
-}
-/* .search-header{
-    position: absolute;
-    top: 0px;
-    background-color: rgb(240, 235, 223);
-    width: 100%;
-    height: 13%;
-    display: flex;
-    align-items: center;
-    
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.row{
-    display: flex; /* coloca lado a lado */
-    align-items: center; /*centro cima baixo*/
-    justify-content: center; /*centro esquerda direita*/
-}
-
-.card{
-    border-radius: 2px; /*arredonda bordas*/
-    box-shadow: 4px 3px 10px -2px rgba(69, 71, 90, 0.13);/*https://cssgenerator.pl/en/box-shadow-generator/*/
-    padding: 5px;/* espaço ao redor do conteúdo*/
-    margin: 5px;/* espaço ao redor do elemento*/
-    width: 280px;/* largura de um elemento*/
-    transition: all 0.3s ease-out;/* efeito a ser colocado - efeito de transição com final lento */
-}
-
-.card:hover{
-    transform: translate(-2px); /* sobe o card */
-    cursor: pointer; /* mouse vira maozinha*/
-}
-
-
-.card p{ /* estiliza o paragrafo */
-    color: rgb(2, 32, 56); /*cor do parágrafo*/
-    font-size: 16px; /*tamanho fonte parágrafo*/
-}
-
-.card del{
-    color: rgb(186, 44, 44);
-}
-
-.card h3{
-    color: rgb(20, 32, 140);
-}
-
-.imagem{ /* centraliza img e muda tamanho */
-    margin: auto;
+    justify-content: space-around;
+  }
+  
+  .card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 250px;
+  }
+  
+  .card h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: hsl( 309, 30%, 29%);
+  }
+  
+  .card p {
+    font-size: 16px;
+    color: hsl(76, 17%, 52%);
+  }
+  
+  .card del {
+    color: #dd2828;
+    margin-left: 5px;
+  }
+  
+  .card ion-icon {
+    margin-right: 5px;
+    font-size: 20px;
+    vertical-align: middle;
+    color: #c67990;
+  }
+  
+  .imagem {
     display: block;
-    max-width: 200px;
-    max-height: 200px;
-}
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+
+  footer.centered-footer {
+    background-color: rgba(255, 245, 221, 0.716);
+    color: hsl(350, 83%, 67%);
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  
+  .footer-location,
+  .footer-social {
+    flex: 0 0 100%; /* Define que cada div ocupe uma linha inteira */
+  }
+  
+  .footer-location h3,
+  .footer-social h3 {
+    margin-top: 0%;
+    margin-bottom: 10px;
+    font-family: 'Kanit', sans-serif;
+  }
+  
+  .footer-location p {
+    font-family: 'Kanit', sans-serif;
+  }
+  
+  .footer-social {
+    flex: 0 0 100%;
+    margin-top: 10px;
+    font-size: 14px;
+    font-family: 'Kanit', sans-serif;
+    color: hsl(350, 83%, 67%);
+  }
+  
+  .footer-social p {
+    margin: 0; /* Remove as margens padrão do parágrafo */
+  }
+  
+  
+  .footer-social a:hover {
+    text-decoration: underline;
+  }
+
+
+  .footer-social img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  .credits {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Kanit', sans-serif;
+    color: hsl(350, 83%, 67%);
+  }
+  
+  .credits p {
+    margin-bottom: 5px;
+  }
+  
+  
+  .credits a {
+    color: hsl(350, 83%, 67%);
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  .credits a:hover {
+    text-decoration: underline;
+  }

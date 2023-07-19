@@ -15,7 +15,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(pexels-moose-photos-1037993.jpeg);
+    background-image: url(img/pexels-moose-photos-1037993.jpeg);
     background-size: 1280px;
 }
 
@@ -61,7 +61,7 @@ body{
 
 .menu ul li a{
     color: rgb(55, 52, 52);
-    font-family: 'Kanit', cursive; 
+    font-family: 'Kanit'; 
     font-size: 17px;
     text-decoration: none;
     padding: 6px;
@@ -135,8 +135,6 @@ body{
 .input-box input:focus-visible{
     outline: 2px solid #e0a5b7;
 }
-
-
 
 button{
     border: none;
